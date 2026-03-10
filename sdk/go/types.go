@@ -87,5 +87,5 @@ var (
 	USDCBase = common.HexToAddress("0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913")
 
 	// ACPCore deployed address (filled after deployment)
-	ACPCoreBase = common.HexToAddress("0x0000000000000000000000000000000000000000")
+	ACPCoreBase = common.HexToAddress("0x16213AB6a660A24f36d4F8DdACA7a3d0856A8AF5")
 )

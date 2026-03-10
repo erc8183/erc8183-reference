@@ -63,7 +63,7 @@ contract ReputationGate is IACPHook, Ownable {
     function beforeAction(
         uint256 jobId,
         bytes4 selector,
-        bytes calldata data
+        bytes calldata /* data */
     ) external override {
         // Only gate the fund() action — when client locks escrow.
         // This is the right enforcement point: provider is identified,
@@ -87,7 +87,7 @@ contract ReputationGate is IACPHook, Ownable {
     function afterAction(
         uint256 jobId,
         bytes4 selector,
-        bytes calldata data
+        bytes calldata /* data */
     ) external override {
         // No-op. Reputation score updates happen off-chain in this reference impl.
         // In a fully on-chain system, you'd increment score here after complete().

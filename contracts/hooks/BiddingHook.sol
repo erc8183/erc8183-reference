@@ -139,7 +139,7 @@ contract BiddingHook is IACPHook, Ownable {
     function beforeAction(
         uint256 jobId,
         bytes4 selector,
-        bytes calldata data
+        bytes calldata /* data */
     ) external override {
         if (selector == IACP.fund.selector) {
             BiddingState storage state = biddingStates[jobId];
@@ -158,7 +158,7 @@ contract BiddingHook is IACPHook, Ownable {
     function afterAction(
         uint256 jobId,
         bytes4 selector,
-        bytes calldata data
+        bytes calldata /* data */
     ) external override {
         // No-op
     }

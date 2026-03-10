@@ -155,7 +155,7 @@ The main ERC-8183 implementation. Deployed on Base Mainnet.
 
 | Network | Address |
 |---------|---------|
-| Base Mainnet | `TBD — deploying soon` |
+| Base Mainnet | [`0x16213AB6a660A24f36d4F8DdACA7a3d0856A8AF5`](https://basescan.org/address/0x16213AB6a660A24f36d4F8DdACA7a3d0856A8AF5) |
 
 Design principles:
 - **Minimal** — only what ERC-8183 requires

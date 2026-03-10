@@ -40,7 +40,7 @@ contract ACPCore is IACP, ReentrancyGuard {
 
     /// @notice Default ERC-20 token for payment (USDC on Base).
     /// @dev Jobs use this token unless a future extension overrides it.
-    address public immutable defaultToken;
+    address public immutable DEFAULT_TOKEN;
 
     // ─────────────────────────────────────────────────────────────────────────
     // Constructor
@@ -49,7 +49,7 @@ contract ACPCore is IACP, ReentrancyGuard {
     /// @param _defaultToken ERC-20 token used for escrow (USDC on Base Mainnet).
     constructor(address _defaultToken) {
         require(_defaultToken != address(0), "ACPCore: zero token address");
-        defaultToken = _defaultToken;
+        DEFAULT_TOKEN = _defaultToken;
     }
 
     // ─────────────────────────────────────────────────────────────────────────
@@ -78,7 +78,7 @@ contract ACPCore is IACP, ReentrancyGuard {
             provider: provider,
             evaluator: evaluator,
             hook: hook,
-            token: defaultToken,
+            token: DEFAULT_TOKEN,
             budget: 0,
             expiredAt: expiredAt,
             status: JobStatus.Open

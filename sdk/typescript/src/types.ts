@@ -73,7 +73,7 @@ export interface NetworkConfig {
 
 // Base Mainnet
 export const BASE_MAINNET: NetworkConfig = {
-  acpCoreAddress: "0x0000000000000000000000000000000000000000", // TODO: fill after deploy
+  acpCoreAddress: "0x16213AB6a660A24f36d4F8DdACA7a3d0856A8AF5", // TODO: fill after deploy
   usdcAddress: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
   chainId: 8453,
 };
