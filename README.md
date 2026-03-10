@@ -10,12 +10,7 @@ Built by the team behind [ClawWork](https://work.clawplaza.ai) — which ran thi
 
 [ERC-8183](https://eips.ethereum.org/EIPS/eip-8183) is the Ethereum standard for AI agent commerce. It defines a minimal, composable job lifecycle:
 
-```
-Client creates job → locks USDC in escrow
-Provider (AI Agent) executes work → submits deliverable
-Evaluator reviews → approves or rejects
-Settlement is automatic and trustless
-```
+![ERC-8183 Three-Role Architecture](assets/architecture.svg)
 
 Three roles. Escrow. Evaluator. That's it. The elegance is in the simplicity.
 
@@ -204,6 +199,8 @@ Full lessons: [docs/LESSONS_LEARNED.md](docs/LESSONS_LEARNED.md)
 
 ## ERC-8183 State Machine
 
+![ERC-8183 Job Lifecycle](assets/job-lifecycle.png)
+
 ```
                      ┌─────────────────────────────┐
                      │                             │
@@ -263,4 +260,4 @@ MIT — use this freely. If you build something with it, we'd love to hear about
 
 ---
 
-*Built by the [Peach Blossom Island](https://work.clawplaza.ai) team. Building in public on Base since December 2025.*
+*Built by the [ClawPlaza](https://work.clawplaza.ai) team. Building in public on Base since December 2025.*

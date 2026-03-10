@@ -1,0 +1,145 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D0D0F"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="coreGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1D4ED8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0"/>
+    </linearGradient>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#3B82F6"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#10B981"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#F59E0B"/>
+    </marker>
+    <marker id="arrow-amber-up" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#F59E0B" opacity="0.5"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle dot grid -->
+  <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="0.8" fill="#1F2937"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)" opacity="0.6"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="3" fill="#2563EB"/>
+
+  <!-- ─── TITLE AREA ─── -->
+  <text x="60" y="68" fill="white" font-size="34" font-weight="700" letter-spacing="-0.5">ERC-8183 Reference Implementation</text>
+  <text x="60" y="102" fill="#6B7280" font-size="18">Production-proven · 20,000+ AI agents · Deployed on Base Mainnet</text>
+
+  <!-- Divider -->
+  <line x1="60" y1="125" x2="1140" y2="125" stroke="#1F2937" stroke-width="1"/>
+
+  <!-- ─── CLIENT BOX ─── -->
+  <rect x="55" y="150" width="270" height="250" rx="12" fill="#13104A" stroke="#4F46E5" stroke-width="1.5"/>
+  <rect x="55" y="150" width="270" height="4" rx="2" fill="#4F46E5"/>
+  <!-- Label -->
+  <text x="190" y="186" fill="#A5B4FC" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="2">ROLE</text>
+  <text x="190" y="218" fill="white" font-size="28" font-weight="700" text-anchor="middle">Client</text>
+  <!-- Methods -->
+  <rect x="85" y="232" width="210" height="1" fill="#1F2937"/>
+  <text x="190" y="258" fill="#818CF8" font-size="13" font-family="'SF Mono', 'Fira Code', monospace" text-anchor="middle">createJob(provider, evaluator)</text>
+  <text x="190" y="278" fill="#818CF8" font-size="13" font-family="'SF Mono', 'Fira Code', monospace" text-anchor="middle">fund(jobId, budget)</text>
+  <!-- Description -->
+  <text x="190" y="315" fill="#9CA3AF" font-size="13" text-anchor="middle">Posts work + locks USDC</text>
+  <text x="190" y="333" fill="#9CA3AF" font-size="13" text-anchor="middle">in trustless escrow</text>
+  <!-- Badge -->
+  <rect x="130" y="364" width="120" height="24" rx="12" fill="#1E1B4B"/>
+  <text x="190" y="381" fill="#6366F1" font-size="12" font-weight="600" text-anchor="middle">Human / Pipeline</text>
+
+  <!-- Arrow Client → ACPCore -->
+  <line x1="327" y1="280" x2="455" y2="280" stroke="#3B82F6" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowBlue)"/>
+  <rect x="340" y="256" width="100" height="18" rx="4" fill="#0D0D0F"/>
+  <text x="390" y="269" fill="#3B82F6" font-size="11" font-family="'SF Mono', monospace" text-anchor="middle">fund USDC →</text>
+
+  <!-- ─── ACPCORE BOX (center) ─── -->
+  <rect x="460" y="150" width="280" height="250" rx="12" fill="#080F1E" stroke="#1D4ED8" stroke-width="2"/>
+  <rect x="460" y="150" width="280" height="250" rx="12" fill="url(#coreGlow)"/>
+  <rect x="460" y="150" width="280" height="4" rx="2" fill="#1D4ED8"/>
+  <!-- Glow rings -->
+  <rect x="460" y="150" width="280" height="250" rx="12" fill="none" stroke="#3B82F6" stroke-width="0.5" opacity="0.4"/>
+  <!-- Label -->
+  <text x="600" y="186" fill="#93C5FD" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="2">CONTRACT</text>
+  <text x="600" y="218" fill="white" font-size="28" font-weight="700" text-anchor="middle">ACPCore</text>
+  <text x="600" y="240" fill="#3B82F6" font-size="12" font-family="'SF Mono', monospace" text-anchor="middle">0x1621…8AF5</text>
+  <!-- State flow badges -->
+  <rect x="470" y="256" width="260" height="1" fill="#1F2937"/>
+  <!-- State badges row -->
+  <rect x="474" y="270" width="52" height="22" rx="11" fill="#1F2937"/>
+  <text x="500" y="285" fill="#9CA3AF" font-size="11" font-family="monospace" text-anchor="middle">Open</text>
+
+  <text x="530" y="284" fill="#374151" font-size="14" text-anchor="middle">›</text>
+
+  <rect x="537" y="270" width="58" height="22" rx="11" fill="#172554"/>
+  <text x="566" y="285" fill="#60A5FA" font-size="11" font-family="monospace" text-anchor="middle">Funded</text>
+
+  <text x="600" y="284" fill="#374151" font-size="14" text-anchor="middle">›</text>
+
+  <rect x="605" y="270" width="72" height="22" rx="11" fill="#052E16"/>
+  <text x="641" y="285" fill="#34D399" font-size="11" font-family="monospace" text-anchor="middle">Submitted</text>
+
+  <text x="682" y="284" fill="#374151" font-size="14" text-anchor="middle">›</text>
+
+  <rect x="688" y="270" width="44" height="22" rx="11" fill="#14532D"/>
+  <text x="710" y="285" fill="#86EFAC" font-size="11" font-family="monospace" text-anchor="middle">Done</text>
+
+  <!-- Core desc -->
+  <text x="600" y="325" fill="#9CA3AF" font-size="13" text-anchor="middle">Immutable escrow · Auto-settlement</text>
+  <text x="600" y="343" fill="#9CA3AF" font-size="13" text-anchor="middle">ReentrancyGuard · SafeERC20</text>
+  <!-- Base badge -->
+  <rect x="530" y="360" width="140" height="24" rx="12" fill="#172554"/>
+  <text x="600" y="377" fill="#3B82F6" font-size="12" font-weight="600" text-anchor="middle">⬡ Base Mainnet</text>
+
+  <!-- Arrow Provider → ACPCore (from right, pointing left) -->
+  <line x1="873" y1="280" x2="743" y2="280" stroke="#10B981" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowGreen)"/>
+  <rect x="762" y="256" width="100" height="18" rx="4" fill="#0D0D0F"/>
+  <text x="812" y="269" fill="#10B981" font-size="11" font-family="'SF Mono', monospace" text-anchor="middle">← submit CID</text>
+
+  <!-- ─── PROVIDER BOX ─── -->
+  <rect x="875" y="150" width="270" height="250" rx="12" fill="#022C22" stroke="#059669" stroke-width="1.5"/>
+  <rect x="875" y="150" width="270" height="4" rx="2" fill="#059669"/>
+  <!-- Label -->
+  <text x="1010" y="186" fill="#6EE7B7" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="2">ROLE</text>
+  <text x="1010" y="218" fill="white" font-size="28" font-weight="700" text-anchor="middle">Provider</text>
+  <!-- Methods -->
+  <rect x="905" y="232" width="210" height="1" fill="#1F2937"/>
+  <text x="1010" y="258" fill="#34D399" font-size="13" font-family="'SF Mono', 'Fira Code', monospace" text-anchor="middle">watchMyJobs(address)</text>
+  <text x="1010" y="278" fill="#34D399" font-size="13" font-family="'SF Mono', 'Fira Code', monospace" text-anchor="middle">submit(jobId, ipfsCid)</text>
+  <!-- Description -->
+  <text x="1010" y="315" fill="#9CA3AF" font-size="13" text-anchor="middle">Executes work · uploads</text>
+  <text x="1010" y="333" fill="#9CA3AF" font-size="13" text-anchor="middle">deliverable to IPFS</text>
+  <!-- Badge -->
+  <rect x="950" y="364" width="120" height="24" rx="12" fill="#022C22" stroke="#059669" stroke-width="1"/>
+  <text x="1010" y="381" fill="#10B981" font-size="12" font-weight="600" text-anchor="middle">AI Agent</text>
+
+  <!-- Vertical arrow ACPCore ↓ Evaluator -->
+  <line x1="600" y1="402" x2="600" y2="443" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrowAmber)"/>
+  <!-- Return arrow (offset) -->
+  <line x1="618" y1="443" x2="618" y2="402" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.45" marker-end="url(#arrowAmber)"/>
+
+  <!-- ─── EVALUATOR BOX ─── -->
+  <rect x="420" y="447" width="360" height="115" rx="12" fill="#1C1107" stroke="#D97706" stroke-width="1.5"/>
+  <rect x="420" y="447" width="360" height="4" rx="2" fill="#D97706"/>
+  <text x="600" y="478" fill="#FCD34D" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="2">ROLE</text>
+  <text x="600" y="506" fill="white" font-size="24" font-weight="700" text-anchor="middle">Evaluator</text>
+  <text x="600" y="528" fill="#F59E0B" font-size="13" font-family="'SF Mono', monospace" text-anchor="middle">complete(jobId)  ·  reject(jobId)</text>
+  <text x="600" y="548" fill="#6B7280" font-size="12" text-anchor="middle">Human · Multisig · AI · ZK Verifier</text>
+
+  <!-- ─── BOTTOM BAR ─── -->
+  <rect x="0" y="588" width="1200" height="42" fill="#0A0F1E"/>
+  <line x1="0" y1="588" x2="1200" y2="588" stroke="#1F2937" stroke-width="1"/>
+  <text x="60" y="614" fill="#374151" font-size="13" font-family="'SF Mono', monospace">github.com/erc8183/erc8183-reference</text>
+  <text x="600" y="614" fill="#1D4ED8" font-size="13" font-family="'SF Mono', monospace" text-anchor="middle">0x16213AB6a660A24f36d4F8DdACA7a3d0856A8AF5</text>
+  <text x="1140" y="614" fill="#374151" font-size="13" font-family="monospace" text-anchor="end">MIT License</text>
+</svg>
