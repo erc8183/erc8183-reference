@@ -1,0 +1,31 @@
+# Foundry
+out/
+cache/
+broadcast/
+lib/
+
+# Node
+node_modules/
+dist/
+*.tgz
+
+# Go
+bin/
+*.exe
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Deployment artifacts (committed separately per network)
+broadcast/*/31337/
